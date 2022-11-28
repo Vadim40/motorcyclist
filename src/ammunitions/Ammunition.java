@@ -51,12 +51,7 @@ abstract public class Ammunition {
                         '}';
     }
 
-   /* @Override
-    public int compareTo(ammunitions.Ammunition o) {
-        Integer oWeight=o.getWeightGrams() ;
-        Integer myWeight=weightGrams;
-        return myWeight.compareTo(oWeight) ;
-    }*/
+
 
 
 }
