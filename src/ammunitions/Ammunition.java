@@ -6,15 +6,13 @@ abstract public class Ammunition {
     private int priceEuro;
 
     private int weightGrams;
-    private Producer producer;
 
     public Ammunition() {
     }
 
-    public Ammunition(int priceEuro, int weightGrams, Producer producer) {
+    public Ammunition(int priceEuro, int weightGrams) {
         this.priceEuro = priceEuro;
         this.weightGrams = weightGrams;
-        this.producer = producer;
     }
 
     public int getPriceEuro() {
@@ -34,20 +32,13 @@ abstract public class Ammunition {
     }
 
 
-    public Producer getProducer() {
-        return producer;
-    }
 
-    public void setProducer(Producer producer) {
-        this.producer = producer;
-    }
 
     @Override
     public String toString() {
         return
                 "priceEuro=" + priceEuro +
                         ", weightGrams=" + weightGrams +
-                        ", producer=" + producer +
                         '}';
     }
 
