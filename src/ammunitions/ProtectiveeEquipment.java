@@ -1,15 +1,20 @@
 package ammunitions;
 
 public class ProtectiveeEquipment extends Ammunition {
+
+    public enum Type {
+        HELMET,SHOES,LEATHERJACKET,MOTORJACKET,PROTECTIVEGLOVES
+    }
+
     private int degreeProtection;
     private  int size;
-    private ProtectiveeEquipmenTypes type;
+    private Type type;
 
     public ProtectiveeEquipment() {
 
     }
 
-    public ProtectiveeEquipment(int priceEuro, int weightGrams, int degreeProtection, int size, ProtectiveeEquipmenTypes type) {
+    public ProtectiveeEquipment(int priceEuro, int weightGrams, int degreeProtection, int size, Type type) {
         super(priceEuro, weightGrams);
         this.degreeProtection = degreeProtection;
         this.size = size;
@@ -32,11 +37,11 @@ public class ProtectiveeEquipment extends Ammunition {
         this.size = size;
     }
 
-    public ProtectiveeEquipmenTypes getType() {
+    public Type getType() {
         return type;
     }
 
-    public void setType(ProtectiveeEquipmenTypes type) {
+    public void setType(Type type) {
         this.type = type;
     }
 
@@ -45,7 +50,7 @@ public class ProtectiveeEquipment extends Ammunition {
         return "ProtectiveeEquipment{" +
                 "degreeProtection=" + degreeProtection +
                 ", size=" + size +
-                ", type=" + type +
-                 super.toString() ;
+                ", type=" + type +", "+
+                super.toString() ;
     }
 }

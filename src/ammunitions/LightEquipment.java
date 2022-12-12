@@ -1,14 +1,19 @@
 package ammunitions;
 
+
 public class LightEquipment extends Ammunition{
+    public enum Type {
+        TEXTILEPANTS,TEXTILEJACKET,MITTEN,TSHIRT
+    }
+
     private int convenience;
     private int size;
-    private LightEquipmentTypes type;
+    private Type type;
     LightEquipment(){
 
     }
 
-    public LightEquipment(int priceEuro, int weightGrams, int convenience, int size, LightEquipmentTypes type) {
+    public LightEquipment(int priceEuro, int weightGrams, int convenience, int size, Type type) {
         super(priceEuro, weightGrams);
         this.convenience = convenience;
         this.size = size;
@@ -31,11 +36,11 @@ public class LightEquipment extends Ammunition{
         this.size = size;
     }
 
-    public LightEquipmentTypes getType() {
+    public Type getType() {
         return type;
     }
 
-    public void setType(LightEquipmentTypes type) {
+    public void setType(Type type) {
         this.type = type;
     }
 
@@ -44,7 +49,7 @@ public class LightEquipment extends Ammunition{
         return "LightEquipment{" +
                 "convenience=" + convenience +
                 ", size=" + size +
-                ", type=" + type +
-                 super.toString();
+                ", type=" + type +", "+
+                super.toString();
     }
 }

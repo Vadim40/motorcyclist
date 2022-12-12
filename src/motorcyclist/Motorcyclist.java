@@ -1,6 +1,6 @@
 package motorcyclist;
 
-import ammunitions.*;
+import ammunitions.Ammunition;
 
 import java.util.Arrays;
 
@@ -17,6 +17,22 @@ public class Motorcyclist  {
 
     public Motorcyclist(Ammunition[] ammunition, String name) {
         this.ammunition = ammunition;
+        this.name = name;
+    }
+
+    public Ammunition[] getAmmunition() {
+        return ammunition;
+    }
+
+    public void setAmmunition(Ammunition[] ammunition) {
+        this.ammunition = ammunition;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 
