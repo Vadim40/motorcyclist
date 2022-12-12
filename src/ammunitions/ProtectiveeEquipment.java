@@ -46,6 +46,6 @@ public class ProtectiveeEquipment extends Ammunition {
                 "degreeProtection=" + degreeProtection +
                 ", size=" + size +
                 ", type=" + type +
-                '}';
+                 super.toString() ;
     }
 }

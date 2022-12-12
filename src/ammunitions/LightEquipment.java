@@ -45,6 +45,6 @@ public class LightEquipment extends Ammunition{
                 "convenience=" + convenience +
                 ", size=" + size +
                 ", type=" + type +
-                '}';
+                 super.toString();
     }
 }

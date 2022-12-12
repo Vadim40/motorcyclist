@@ -16,9 +16,8 @@ public class Motorcyclist  {
 
 
     public Motorcyclist(Ammunition[] ammunition, String name) {
-        this.ammunition = new Ammunition[]{ammunition[0], ammunition[1], ammunition[2], ammunition[3]};
-        this.name=name;
-
+        this.ammunition = ammunition;
+        this.name = name;
     }
 
     @Override
